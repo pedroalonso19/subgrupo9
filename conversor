@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+void converterMassa() {
+    float kg, gramas;
+    printf("\nDigite a massa em quilogramas (kg): ");
+    scanf("%f", &kg);
+    gramas = kg * 1000;
+    printf("%.2f kg equivalem a %.2f gramas.\n", kg, gramas);
+}
+
+void converterVelocidade() {
+    float kmh, ms;
+    printf("\nDigite a velocidade em km/h: ");
+    scanf("%f", &kmh);
+    ms = kmh / 3.6;
+    printf("%.2f km/h equivalem a %.2f m/s.\n", kmh, ms);
+}
+
+void converterTemperatura() {
+    float celsius, kelvin;
+    printf("\nDigite a temperatura em Celsius: ");
+    scanf("%f", &celsius);
+    kelvin = celsius + 273.15;
+    printf("%.2f graus Celsius equivalem a %.2f Kelvin.\n", celsius, kelvin);
+}
+ 

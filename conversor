@@ -3,7 +3,7 @@
 void converterMassa() { // Funcao para converter massa de quilograma para gramas
     float kg, gramas; // Declara as duas variaveis kg e garamas
     printf("\nDigite a massa em quilogramas (kg): "); //Pede ao usuario o valor da massa em kg
-    scanf("%f", &kg);  // Le o valor digitado pelo usuario e armazenana variavel kg
+    scanf("%f", &kg);  // Le o valor digitado pelo usuario e armazenana na variavel kg
     gramas = kg * 1000; //Converte a massa em kg pra gramas
     printf("%.2f kg equivalem a %.2f gramas.\n", kg, gramas); // Mostra o resultado da conversao
 }

@@ -1,6 +1,21 @@
 #include <stdio.h>
 
-void converterMassa() { // Funcao para converter massa de quilograma para gramas
+void converterMassa(void);
+void converterVelocidade(void);
+void converterTemperatura(void);
+
+int main(void) {
+    printf("-=-=- CONVERSOR DE UNIDADES -=-=-\n");
+    printf("Digite:\n");
+    printf("1 para converter MASSA.\n");
+    printf("2 para converter VELOCIDADE.\n");
+    printf("3 para converter TEMPERATURA.\n");
+    printf("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n");
+
+    return 0;
+}
+
+void converterMassa(void) { // Funcao para converter massa de quilograma para gramas
     float kg, gramas; // Declara as duas variaveis kg e garamas e identifica o tipo delas
     printf("\n Digite a massa em quilogramas (kg): "); //Pede ao usuario o valor da massa em kg
     scanf("%f", &kg);  // Le o valor digitado pelo usuario e armazenana na variavel kg
@@ -8,7 +23,7 @@ void converterMassa() { // Funcao para converter massa de quilograma para gramas
     printf("%.2f kg equivalem a %.2f gramas.\n", kg, gramas); // Mostra o resultado da conversao
 }
 
-void converterVelocidade() { // Funcao para converter velocidade de km/h para ms
+void converterVelocidade(void) { // Funcao para converter velocidade de km/h para ms
     float kmh, ms; //Declara as duas variaveis kmh e ms e identifica o tipo delas
     printf("\n Digite a velocidade em km/h: "); // Pede ao usuario o valor da velocidade em km/h
     scanf("%f", &kmh);// Le o valor digitado pelo usuario e armazena na variavel kmh
@@ -16,7 +31,7 @@ void converterVelocidade() { // Funcao para converter velocidade de km/h para ms
     printf("%.2f km/h equivalem a %.2f m/s.\n", kmh, ms); // Mostra o resultado da conversao
 }
 
-void converterTemperatura() { // Funcao para converter temperatura de Celsius para kelvin
+void converterTemperatura(void) { // Funcao para converter temperatura de Celsius para kelvin
     float celsius, kelvin; // Declara as duas variaveis celsius e kelvin e identifica o tipo delas
     printf("\n Digite a temperatura em Celsius: ");// Pede ao usuario o valor da temperatura em Celsius
     scanf("%f", &celsius); // Le o valor digitado pelo usuario e armazena na variavel celsius

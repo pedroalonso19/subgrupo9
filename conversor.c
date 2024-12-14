@@ -5,12 +5,28 @@ void converterVelocidade(void);
 void converterTemperatura(void);
 
 int main(void) {
+    int resposta;
     printf("-=-=- CONVERSOR DE UNIDADES -=-=-\n");
     printf("Digite:\n");
     printf("1 para converter MASSA.\n");
     printf("2 para converter VELOCIDADE.\n");
     printf("3 para converter TEMPERATURA.\n");
     printf("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n");
+
+    scanf("%d", &resposta);
+    switch (resposta) {
+        case 1:
+            converterMassa();
+            break;
+        case 2:
+            converterVelocidade();
+            break;
+        case 3:
+            converterTemperatura();
+            break;
+        default:
+            printf("\nEscolha invalida. Por favor, execute o programa novamente e selecione uma opcao valida.\n");
+    }
 
     return 0;
 }
